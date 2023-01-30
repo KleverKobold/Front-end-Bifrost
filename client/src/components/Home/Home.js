@@ -94,14 +94,19 @@ export default function Home() {
   return (
     <div className="homeScreen">
       <div className="navbar">
-        <h1 className="titleHome">Critical Hit!</h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Valknut.svg"
+          width="72px"
+          height="67px"
+        />
+        <h1 className="titleHome">Bifröst</h1>
         <button
           onClick={(e) => {
             handleClick(e);
           }}
           className="btnAllGames"
         >
-          See all Videogames
+          Show Top Projects
         </button>
         <SearchBar className="searchBarHome" />
         <div>
@@ -179,18 +184,19 @@ export default function Home() {
                     )
                     .join(", ")}
                   rating={game.rating}
+                  className="gameCard"
                 />
               </Link>
             </>
           );
         })}
-        <Paginate
-          gamesPerPage={gamesPerPage}
-          allVideogames={allVideogames.length}
-          paginate={paginate}
-          className="paginateHome"
-        />
       </div>
+      <Paginate
+        gamesPerPage={gamesPerPage}
+        allVideogames={allVideogames.length}
+        paginate={paginate}
+        className="paginateHome"
+      />
     </div>
   );
 }

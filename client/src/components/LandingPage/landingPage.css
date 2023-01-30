@@ -1,60 +1,218 @@
-
-
-
-
-.landingDiv{
-        margin-top: 60px;
-        justify-content: center;
-        align-items: center;
-        padding: 200px ,  200px 200px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: #000;
-        display: flex;
-        flex-direction: column;
-
-        
-
+* {
+  scroll-behavior: smooth;
 }
 
-.btnLanding{
-        
-        font-family: 'Oswald', sans-serif;
-        font-size:  40px; ;
-        width: 100%;     
-        max-width: 200px;     
-        height: 120px;     
-        border: 3px solid;     
-        color: #000;
-        margin-top: 50px;
-         background: none;     
-         outline: none;     
-         border-radius: 5px;     
-         cursor: pointer;     
-         font-weight: bold;    
-          position: relative;}  
-          .btnLanding::before, .btnLanding::after {     
-                content: '';     
-                position: absolute;     
-                width: 14px;     
-                height: 3px;     
-                background:#dcdde1;     
-                transform: skewX(40deg);     
-                transition: .3s linear; }  
-                .btnLanding::before {     top: -3px;     left: 10%; }  
-                .btnLanding::after {     bottom: -3px;     right: 10%; }  
-                .btnLanding:hover::before {     left: 85%; }   
-                .btnLanding:hover::after {     right: 85%}
+.logoContainer {
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 100px, 100px 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
 
+.btnLanding {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  width: 100%;
+  max-width: 200px;
+  height: 120px;
+  border: 3px solid;
+  color: #000;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px, 10px, 10px, 20px;
+  font-weight: bold;
+  position: relative;
+}
+.btnLanding::before,
+.btnLanding::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  background: #dcdde1;
+  transform: skewX(40deg);
+  transition: 0.3s linear;
+}
+.btnLanding::before {
+  top: -3px;
+  left: 10%;
+}
+.btnLanding::after {
+  bottom: -3px;
+  right: 10%;
+}
+.btnLanding:hover::before {
+  left: 85%;
+}
+.btnLanding:hover::after {
+  right: 85%;
+}
 
+.logoTitle {
+  font-family: "Quintessential", cursive;
 
-.question{
-        font-family: 'Oswald', sans-serif;
-       
-        border-radius: 18px;
-        border: #000;
-        font-size: 55px;
-        cursor:default;
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 196px;
+  cursor: default;
+}
 
-        
+.descriptionCont {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  cursor: default;
+  padding-top: 60px;
+}
+
+.descriptionOne {
+  font-family: "Raleway", sans-serif;
+  padding: 30px 10px 10px 20px;
+  margin: 20px;
+}
+.titleOne {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+}
+.textOne {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.descriptionTwo {
+  font-family: "Raleway", sans-serif;
+  padding: 30px 10px 10px 20px;
+  margin: 20px;
+  border-left: 2px solid black;
+}
+.titleTwo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+}
+.textTwo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.btnProject {
+  background: #1e272e;
+  border-radius: 21px;
+  width: 243px;
+  height: 70px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  margin-top: 22px;
+
+  color: #ffffff;
+}
+.btnProject:hover {
+  background: #ffffff;
+  color: #1e272e;
+  cursor: pointer;
+}
+
+.btnInvestor {
+  background: #1e272e;
+  border-radius: 21px;
+  width: 243px;
+  height: 70px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  margin-top: 50px;
+
+  color: #ffffff;
+}
+.btnInvestor:hover {
+  background: #ffffff;
+  color: #1e272e;
+  cursor: pointer;
+}
+
+.infoOne {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  column-gap: 20px;
+  margin-top: 100px;
+}
+
+.infoOneTitle {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 80px;
+}
+.titleOneBar {
+}
+
+.infoOneText {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.infoOneImage {
+  width: 584px;
+  height: 317.98px;
+  border-radius: 18px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.infoTwo {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  column-gap: 90px;
+  margin-top: 100px;
+}
+
+.infoTwoTitle {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 95px;
+}
+.titleTwoBar {
+}
+
+.infoTwoText {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.infoTwoImage {
+  width: 584px;
+  height: 317.98px;
+  border-radius: 18px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }

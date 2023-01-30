@@ -5,7 +5,7 @@
 }
 body {
   background-size: cover;
-  background: url(https://images.alphacoders.com/108/1085570.jpg);
+  background-image: url("./style-assets/fresh_snow.png");
   background-attachment: fixed;
 
   /* background: url(https://wallpapercave.com/wp/wp5231545.jpg); */
